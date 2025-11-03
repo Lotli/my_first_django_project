@@ -1,0 +1,68 @@
+:root {
+    --headerText: #355839;
+    --text: #3e3e3e;
+    --secondaryText: #828282;
+    --background: #fdf1ec;
+    --primary: #48744d;
+    --secondary: #9dcfa3;
+    --accent: #71c77b;
+
+}
+
+body {
+    background-color:  var(--background);
+}
+
+h1{
+    color: var(--headerText);
+    font-family: 'Bentham';
+    font-weight: bolder;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.product-card {
+    height: 380px;
+    width: 45%;
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    float: left;
+    height: 380px;
+    width: 295px;
+    border-radius: 7px 7px 7px 7px;
+    margin-right: 15px;
+}
+
+.product-name{
+    text-align:center;
+    font-family: 'Bentham';
+    color: var(--headerText);
+}
+
+.product-brand{
+    font-family: 'Raleway';
+    font-size: small;
+    text-transform: uppercase;
+    color: var(--secondaryText);
+}
+
+.product-description{
+    font-family: 'Raleway';
+    color: var(--text);
+}
+
+.product-price{
+    vertical-align: bottom;
+    text-align:center;
+    font-family: 'Suranna';
+    font-size: large;
+    font-weight: bold;
+    color: var(--primary);
+}
