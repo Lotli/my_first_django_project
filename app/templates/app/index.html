@@ -2,9 +2,10 @@
 {% load static %}
 {% block title %}Главная{% endblock %}
 {% block content %}
-<h1>
-    Главная страница
+<h1 style="padding-top:80px;">
+    Main page
 </h1>
+<hr class="divider">
 {% for category in categories %}
     <h1>{{ category.name }}</h1>
     <div class="gallery">    
@@ -13,13 +14,14 @@
             <div class="product-card">
             <img class="product-image" src="{{ product.image_url }}"/>
             <h2 class="product-name">{{ product.name }}</h2>
-            <p class="product-brand">> By {{ product.brand }}</p>
+            <p class="product-brand">> By {{ product.brand }} | {{ product.brand.country }}</p>
             <p class="product-description">{{ product.description }}</p>
             <p class="product-price">{{ product.price }}₽</p>
             </div>
             {% endif %}
         {% endfor %}
     </div>
+    <hr class="divider">
 {% endfor %}
 
 {% endblock %}
